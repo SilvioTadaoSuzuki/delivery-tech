@@ -19,7 +19,7 @@ import java.util.List;
 
 public class DataLoader implements CommandLineRunner {
     
-    private final ClienteRepository ClienteRepository;
+    private final ClienteRepository clienteRepository;
 
     @Override
     public void run (String... args) {

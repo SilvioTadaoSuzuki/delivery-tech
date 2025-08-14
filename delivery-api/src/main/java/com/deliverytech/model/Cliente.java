@@ -11,15 +11,15 @@ import lombok.*;
  */
 
  @Entity
- //Diz ao JPA que essa classe é uma entidade (tabela no banco).
+ //Diz ao JPA que essa classe é uma entidade (tabela no banco) - Lombok.
  @Data
- //Gera automaticamente getters, setters, equals. hashCode e toString.
+ //Gera automaticamente getters, setters, equals, hashCode e toString - Lombok.
  @NoArgsConstructor
- //Gera um constructor sem argumentos.
+ //Gera um constructor sem argumentos - Jakarta.
  @AllArgsConstructor
- //Gera um constructor com todos os argumentos.
+ //Gera um constructor com todos os argumentos - Jakarta.
  @Builder
- //Permite construir clientes usando o padrão Builder.
+ //Permite construir clientes usando o padrão Builder - Lombok.
 
  public class Cliente {
     @Id
@@ -30,7 +30,7 @@ import lombok.*;
     //Atributo que representa o identificador único do cliente.
 
     @Column(nullable = false)
-    //Campo não pode ser nulo.
+    //Se "false", campo não pode ser nulo/branco.
     private String nome;
     //Nome do cliente.
 
