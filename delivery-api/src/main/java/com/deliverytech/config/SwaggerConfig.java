@@ -19,7 +19,7 @@ public class SwaggerConfig {
                 .description("API para sistema de delivery - FAT T3")
                 .contact(new Contact()
                     .name("Delivery Tech Team")
-                    .email("contato@deliverytech.com")))
+                    .email("contato@deliverytech.com")));
     }
 }
 
