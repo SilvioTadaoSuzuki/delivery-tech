@@ -43,14 +43,14 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public ClienteResponse buscarPorId(Long id) {
         Cliente cliente = clienteRepository.findById(id)
-            .orElseThrow(() -> new IllegalArgumentException("Cliente não encontrado"))
+            .orElseThrow(() -> new IllegalArgumentException("Cliente não encontrado"));
         return toResponse(cliente);
     }
 
     @Override
     public ClienteResponse atualizar(Long id, ClienteRequest request) {
         Cliente cliente = clienteRepository.findById(id)
-            .orElseThrow(() -> new IllegalArgumentException("Cliente não encontrado"))
+            .orElseThrow(() -> new IllegalArgumentException("Cliente não encontrado"));
         cliente.setNome(request.getNome());
         cliente.setEmail(request.getEmail());
         cliente.setTelefone(request.getTelefone());
@@ -61,7 +61,7 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public void deletar(Long id) {
         Cliente cliente = clienteRepository.findById(id)
-            .orElseThrow(() -> new IllegalArgumentException("Cliente não enocontrado"))
+            .orElseThrow(() -> new IllegalArgumentException("Cliente não enocontrado"));
         cliente.setAtivo(false);
         clienteRepository.save(cliente);
     }

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class SwaggerConfig {
     @Bean
     //Expõe um bean OpenAPI customizado para documentar a API.
-    public OpenAI customOpenAPI () {
+    public OpenAPI customOpenAPI () {
         return new OpenAPI()
             .info(new Info()
                 .title("Delivery Tech API")
