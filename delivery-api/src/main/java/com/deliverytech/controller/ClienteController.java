@@ -1,5 +1,5 @@
- 
 package com.deliverytech.controller;
+
 import com.deliverytech.dto.request.ClienteRequest;
 import com.deliverytech.dto.response.ClienteResponse;
 import com.deliverytech.service.ClienteService;
@@ -15,9 +15,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+//Indica que é um controlador REST.
 @RequestMapping("/api/clientes")
+//Define o caminho base dos endpoints.
 @RequiredArgsConstructor
+//Injeta dependências final via construtor.
 @Tag(name = "Cliente", description = "Operações relacionadas ao gerenciamento de clientes")
+
 public class ClienteController {
     private final ClienteService clienteService;
     @PostMapping
@@ -73,3 +77,5 @@ public class ClienteController {
         return ResponseEntity.noContent().build();
     }
 }
+
+//Como usar: Mapeia rotas HTTP para métodos Java, chamando o servide apropriado.
