@@ -18,6 +18,7 @@ public class ClienteServiceImpl implements ClienteService {
 
     private final ClienteRepository clienteRepository;
 
+    //POST - endpoint para criar
     @Override
     public ClienteResponse criar(ClienteRequest request) {
         if (clienteRepository.existsByEmail(request.getEmail())) {
@@ -33,6 +34,7 @@ public class ClienteServiceImpl implements ClienteService {
     return toResponse(cliente);
     }
 
+    //GET - endpoint para listar
     @Override
     public List<ClienteResponse> listar() {
         return clienteRepository.findAll().stream()
@@ -40,6 +42,7 @@ public class ClienteServiceImpl implements ClienteService {
             .collect(Collectors.toList());
     }
 
+    //GET - endpoint para buscar
     @Override
     public ClienteResponse buscarPorId(Long id) {
         Cliente cliente = clienteRepository.findById(id)
@@ -47,6 +50,7 @@ public class ClienteServiceImpl implements ClienteService {
         return toResponse(cliente);
     }
 
+    //PUT - endpoint para atualizar todos os dados
     @Override
     public ClienteResponse atualizar(Long id, ClienteRequest request) {
         Cliente cliente = clienteRepository.findById(id)
@@ -58,6 +62,7 @@ public class ClienteServiceImpl implements ClienteService {
         return toResponse(cliente);
     }
 
+    //DELETE - endpoint para mudar status
     @Override
     public void deletar(Long id) {
         Cliente cliente = clienteRepository.findById(id)
@@ -65,7 +70,7 @@ public class ClienteServiceImpl implements ClienteService {
         cliente.setAtivo(false);
         clienteRepository.save(cliente);
     }
-
+    
     private ClienteResponse toResponse(Cliente cliente) {
         return new ClienteResponse(
             cliente.getId(),
