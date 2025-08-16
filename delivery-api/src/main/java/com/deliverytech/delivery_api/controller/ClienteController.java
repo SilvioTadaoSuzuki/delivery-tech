@@ -1,8 +1,8 @@
-package com.deliverytech.controller;
+package com.deliverytech.delivery_api.controller;
 
-import com.deliverytech.dto.request.ClienteRequest;
-import com.deliverytech.dto.response.ClienteResponse;
-import com.deliverytech.service.ClienteService;
+import com.deliverytech.delivery_api.dto.request.ClienteRequest;
+import com.deliverytech.delivery_api.dto.response.ClienteResponse;
+import com.deliverytech.delivery_api.service.ClienteService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

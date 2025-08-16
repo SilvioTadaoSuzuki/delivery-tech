@@ -1,10 +1,10 @@
-package com.deliverytech.service.impl;
+package com.deliverytech.delivery_api.service.impl;
 
-import com.deliverytech.dto.request.ClienteRequest;
-import com.deliverytech.dto.response.ClienteResponse;
-import com.deliverytech.model.Cliente;
-import com.deliverytech.repository.ClienteRepository;
-import com.deliverytech.service.ClienteService;
+import com.deliverytech.delivery_api.dto.request.ClienteRequest;
+import com.deliverytech.delivery_api.dto.response.ClienteResponse;
+import com.deliverytech.delivery_api.model.Cliente;
+import com.deliverytech.delivery_api.repository.ClienteRepository;
+import com.deliverytech.delivery_api.service.ClienteService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;

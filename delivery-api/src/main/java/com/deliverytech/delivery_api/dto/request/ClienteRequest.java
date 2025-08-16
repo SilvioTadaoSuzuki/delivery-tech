@@ -1,4 +1,4 @@
-package com.deliverytech.dto.request;
+package com.deliverytech.delivery_api.dto.request;
 
 //import org.hibernate.annotations.EmbeddableInstantiator;
 

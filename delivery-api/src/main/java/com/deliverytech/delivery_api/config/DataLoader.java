@@ -1,7 +1,7 @@
-package com.deliverytech.config;
+package com.deliverytech.delivery_api.config;
 
-import com.deliverytech.model.Cliente;
-import com.deliverytech.repository.ClienteRepository;
+import com.deliverytech.delivery_api.model.Cliente;
+import com.deliverytech.delivery_api.repository.ClienteRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

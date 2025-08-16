@@ -1,4 +1,4 @@
-package com.deliverytech.dto.response;
+package com.deliverytech.delivery_api.dto.response;
 
 import lombok.*;
 

@@ -1,7 +1,7 @@
-package com.deliverytech.service;
+package com.deliverytech.delivery_api.service;
 
-import com.deliverytech.dto.request.ClienteRequest;
-import com.deliverytech.dto.response.ClienteResponse;
+import com.deliverytech.delivery_api.dto.request.ClienteRequest;
+import com.deliverytech.delivery_api.dto.response.ClienteResponse;
 import java.util.List;
 
 public interface ClienteService {

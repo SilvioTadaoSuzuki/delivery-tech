@@ -1,4 +1,4 @@
-package com.deliverytech.model;
+package com.deliverytech.delivery_api.model;
 //Define o pacote onde a classe está localizada.
 
 import jakarta.persistence.*;
