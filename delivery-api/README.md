@@ -22,7 +22,7 @@ Sistema de delivery desenvolvido com Spring Boot e Java 21.
 
 1. **Pré-requisitos:** JDK 21 instalado
 2. Clone o repositório
-3. Execute: `./mvnw spring-boot:run`
+3. Execute: `./mvn spring-boot:run`
 4. Acesse: http://localhost:8080/health
 
 ## 📋 Endpoints
