@@ -2,14 +2,26 @@ package com.deliverytech.delivery_api.dto.response;
 
 import lombok.*;
 
-@Data
-@AllArgsConstructor
-public class ClienteResponse {
-    private Long id;
-    private String nome;
-    private String email;
-    private String telefone;
-    private Boolean ativo;
-}
+import java.time.LocalDateTime;
 
-//Como usar: Retorna dados ao usuário, sem expor toda a entidade Cliente.
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+
+public class ClienteResponse {
+
+    private Long id;
+
+    private String nome;
+
+    private String email;
+
+    private String telefone; 
+
+    private String endereco;
+
+    private Boolean ativo;
+    
+    private LocalDateTime dataCadastro;
+}

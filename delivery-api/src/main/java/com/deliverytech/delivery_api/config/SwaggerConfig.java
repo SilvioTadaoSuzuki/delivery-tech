@@ -3,14 +3,15 @@ package com.deliverytech.delivery_api.config;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.Contact;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-//Marca como classe de configuração do Spring.
+// Marca como classe de configuração do Spring.
 public class SwaggerConfig {
     @Bean
-    //Expõe um bean OpenAPI customizado para documentar a API.
+    // Expõe um bean OpenAPI customizado para documentar a API.
     public OpenAPI customOpenAPI () {
         return new OpenAPI()
             .info(new Info()
@@ -23,4 +24,4 @@ public class SwaggerConfig {
     }
 }
 
-//Como usar: Permite acessar a documentaão interativa da API (Swagger UI) automaticamente.
+// Como usar: Permite acessar a documentaão interativa da API (Swagger UI) automaticamente.
