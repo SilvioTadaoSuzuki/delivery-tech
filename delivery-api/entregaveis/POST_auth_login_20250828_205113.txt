@@ -1,0 +1,17 @@
+=== ENTREGA - TESTE DE ENDPOINT ===
+Data/Hora: 28/08/2025 20:51:13
+Método: POST
+URL Completa: http://localhost:8080/api/auth/login
+Status HTTP: 200
+Content-Type: application/json
+
+=== DADOS ENVIADOS ===
+{
+  "username" : "zedamanga@teste.com",
+  "password" : "123milhas"
+}
+
+=== RESPOSTA REAL ===
+{
+  "token" : "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6ZWRhbWFuZ2FAdGVzdGUuY29tIiwiaWF0IjoxNzU2NDI1MDczLCJleHAiOjE3NTY1MTE0NzN9.R-L7sOdVHMWvXt70UgybJG7Iknw9AuJo2b8bFtzpNno"
+}

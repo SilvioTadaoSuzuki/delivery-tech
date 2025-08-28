@@ -1,0 +1,17 @@
+=== ENTREGA - TESTE DE ENDPOINT ===
+Data/Hora: 27/08/2025 19:50:48
+Método: POST
+URL Completa: http://localhost:8080/api/auth/login
+Status HTTP: 200
+Content-Type: application/json
+
+=== DADOS ENVIADOS ===
+{
+  "username" : "tadao@teste.com",
+  "password" : "123milhas"
+}
+
+=== RESPOSTA REAL ===
+{
+  "token" : "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YWRhb0B0ZXN0ZS5jb20iLCJpYXQiOjE3NTYzMzUwNDgsImV4cCI6MTc1NjQyMTQ0OH0.W0NcreALF5xBm1eZb5-ObEbjJ3OBjRkbESWOQXsNnSI"
+}

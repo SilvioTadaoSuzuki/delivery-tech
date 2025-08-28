@@ -1,4 +1,4 @@
-package com.deliverytech.delivery_api.config;
+/*package com.deliverytech.delivery_api.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -24,4 +24,4 @@ public class SwaggerConfig {
     }
 }
 
-// Como usar: Permite acessar a documentaão interativa da API (Swagger UI) automaticamente.
+// Como usar: Permite acessar a documentação interativa da API (Swagger UI) automaticamente.*/
