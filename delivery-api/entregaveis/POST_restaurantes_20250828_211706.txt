@@ -1,0 +1,29 @@
+=== ENTREGA - TESTE DE ENDPOINT ===
+Data/Hora: 28/08/2025 21:17:06
+Método: POST
+URL Completa: http://localhost:8080/api/restaurantes
+Status HTTP: 201
+Content-Type: application/json
+
+=== DADOS ENVIADOS ===
+{
+  "nome" : "Mataroboi",
+  "categoria" : "Churrascaria",
+  "endereco" : "Avenida Campos Sales, 321, Centro, Mato Grosso do Sul",
+  "taxaEntrega" : 50,
+  "tempoEntregaMinutos" : 100,
+  "telefone" : "5499999999",
+  "email" : "mataroboi@teste.com",
+  "avaliacao" : 5
+}
+
+=== RESPOSTA REAL ===
+{
+  "id" : 6,
+  "nome" : "Mataroboi",
+  "categoria" : "Churrascaria",
+  "telefone" : "5499999999",
+  "taxaEntrega" : 50,
+  "tempoEntregaMinutos" : 100,
+  "ativo" : true
+}

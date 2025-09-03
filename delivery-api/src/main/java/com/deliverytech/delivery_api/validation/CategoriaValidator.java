@@ -18,7 +18,8 @@ public class CategoriaValidator implements ConstraintValidator<ValidCategoria, S
         "SAUDÁVEL",
         "LANCHES",
         "DOCES E BOLOS",
-        "CAFETERIA"
+        "CAFETERIA",
+        "CHURRASCARIA"
     };
 
     @Override

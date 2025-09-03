@@ -1,0 +1,29 @@
+=== ENTREGA - TESTE DE ENDPOINT ===
+Data/Hora: 28/08/2025 21:04:30
+Método: POST
+URL Completa: http://localhost:8080/api/restaurantes
+Status HTTP: 201
+Content-Type: application/json
+
+=== DADOS ENVIADOS ===
+{
+  "nome" : "Umamusume",
+  "categoria" : "Japonesa",
+  "endereco" : "Avenida Japao, 1",
+  "taxaEntrega" : 1.5,
+  "tempoEntregaMinutos" : 10,
+  "telefone" : "2299999999",
+  "email" : "umamusume@teste.com",
+  "avaliacao" : 5
+}
+
+=== RESPOSTA REAL ===
+{
+  "id" : 6,
+  "nome" : "Umamusume",
+  "categoria" : "Japonesa",
+  "telefone" : "2299999999",
+  "taxaEntrega" : 1.5,
+  "tempoEntregaMinutos" : 10,
+  "ativo" : true
+}

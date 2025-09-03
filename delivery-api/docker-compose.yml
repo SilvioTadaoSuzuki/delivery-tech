@@ -1,0 +1,171 @@
+services:
+  # ================================== #
+  # DELIVERY API - Aplicação Principal #
+  # ================================== #
+  delivery-api:
+    build: 
+      context: .
+      # Usa o diretório atual (.) para construir a imagem.
+
+      dockerfile: Dockerfile
+      # Especifica o Dockerfile no diretório atual.
+
+    container_name: delivery-api
+    # Nomeia o container como “delivery-api” para fácil referência.
+
+    user: root
+    # Executa o container como usuário root para permissões completas de acesso.
+
+    ports:
+      - "8080:8080"    # Host:Container
+    # Mapeia a porta 8080 do host para a porta 8080 no container.
+    # Permite acessar a aplicação Spring Boot via http://localhost:8080.
+
+    # Variáveis de Ambiente
+    environment:
+      # Profile específico para Docker
+      SPRING_PROFILES_ACTIVE: docker
+      
+      # Configurações JVM
+      JAVA_OPTS: "-Xms256m -Xmx512m -XX:+UseG1GC -XX:+UseContainerSupport"
+      # Perfil Spring: Define o perfil ativo como “docker”.
+      # Opções JVM:
+      # - Tamanho inicial de heap: 256MB (-Xms256m).
+      # - Tamanho máximo de heap: 512MB (-Xmx512m).
+      # - Usa o Coletor de Lixo G1 (-XX:+UseG1GC).
+      # - Habilita suporte a container para melhor consciência de recursos (-XX:+UseContainerSupport).
+
+      # Configurações da aplicação
+      SERVER_PORT: 8080
+      # Configuração do Servidor: Define a aplicação para rodar na porta 8080.
+
+      # Banco H2 (será persistido via volume)
+      SPRING_DATASOURCE_URL: jdbc:h2:file:/app/data/delivery;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: 
+      # Configuração do Banco de Dados:
+      # - Usa o banco de dados H2 com persistência em arquivo em /app/data/delivery.
+      # - Garante que o banco de dados não feche ao sair e reconecte automaticamente se necessário.
+      # - Usa credenciais padrão do H2 (usuário: sa, senha vazia).
+
+      # JPA/Hibernate
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_SHOW_SQL: false
+      # Configurações JPA/Hibernate:
+      # - Atualiza automaticamente o esquema (update).
+      # - Desativa o log SQL para reduzir o ruído no console.
+      
+      # H2 Console (para desenvolvimento)
+      SPRING_H2_CONSOLE_ENABLED: true
+      SPRING_H2_CONSOLE_PATH: /h2-console
+      SPRING_H2_CONSOLE_SETTINGS_WEB_ALLOW_OTHERS: true
+      # Console H2:
+      # - Habilita o console web para gerenciamento de banco de dados em /h2-console.
+      # - Permite acesso de fora do container.
+      # - Útil para desenvolvimento e depuração de problemas de banco de dados.
+      
+      # Security
+      SPRING_SECURITY_USER_NAME: admin
+      SPRING_SECURITY_USER_PASSWORD: admin123
+      # Define credenciais de administrador padrão.
+      
+      # JWT
+      JWT_SECRET: my-secret-keyQWERTYUIOPASDFGHJKLZXCVBNMQWERTY1-DOCKER
+      JWT_EXPIRATION: 86400000
+      # Configura autenticação JWT com:
+      # - Uma chave secreta para assinatura de token.
+      # - Expiração de token de 24 horas (86.400.000 milissegundos).
+      
+      # Logging
+      LOGGING_LEVEL_COM_DELIVERYTECH: INFO
+      # Define o nível de log INFO para o pacote da aplicação.
+      
+    volumes:
+      # Persistir dados H2
+      - h2_data:/app/data
+      # Persistir logs
+      - app_logs:/app/logs
+      # Mapeia o volume nomeado h2_data para /app/data dentro do container.
+      # Mapeia o volume nomeado app_logs para /app/logs dentro do container.
+      # Garante persistência de dados entre reinicializações/recriações de container.
+
+    networks:
+      - delivery-network
+      # Conecta o serviço à rede de ponte personalizada delivery-network.
+      # Permite a descoberta de serviços entre containers usando nomes de container.
+      
+    restart: unless-stopped
+    # Reinicia automaticamente o container se ele falhar.
+    # Não reinicia se for parado manualmente pelo usuário.
+
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/actuator/health"]
+      # Usa wget para verificar o endpoint de saúde do Spring Boot Actuator.
+
+      interval: 30s
+      # Realiza a verificação a cada 30 segundos.
+
+      timeout: 10s
+      # Permite 10 segundos para a verificação de saúde ser concluída.
+
+      retries: 3
+      # Tenta a verificação de saúde 3 vezes antes de marcar como não saudável
+
+      start_period: 90s
+      # Dá ao container 90 segundos para inicializar antes de começar as verificações.
+
+  # ================================== #
+  # ADMINER - Interface Web para Banco #
+  # ================================== #
+  adminer:
+    image: adminer:latest
+    # Usa a imagem oficial do Adminer do Docker Hub.
+
+    container_name: delivery-adminer
+    # Nomeia o container como “delivery-adminer”.
+
+    ports:
+      - "8083:8080"
+      # Mapeia a porta 8083 do host para a porta 8080 no container.
+
+    environment:
+      ADMINER_DEFAULT_SERVER: delivery-api
+      # Define o servidor de banco de dados padrão para conexão como “delivery-api”.
+
+    networks:
+      - delivery-network
+      # Conecta à mesma rede que o serviço delivery-api.
+
+    restart: unless-stopped
+    # Igual à do delivery-api, reinicia a menos que seja parado manualmente.
+
+    depends_on:
+      - delivery-api
+      # Garante que o container delivery-api seja iniciado primeiro.
+
+# ==================== #
+# VOLUMES PERSISTENTES #
+# ==================== #
+volumes:
+  h2_data:
+    driver: local
+    name: delivery_h2_data
+    # Nomeado delivery_h2_data para fácil identificação.
+    # Usa driver local para armazenamento na máquina host.
+
+  app_logs:
+    driver: local
+    name: delivery_logs
+    # Nomeado delivery_logs para fácil identificação.
+    # Usa driver local para armazenamento na máquina host.
+
+# ================ #
+# REDE CUSTOMIZADA #
+# ================ #
+networks:
+  delivery-network:
+    driver: bridge
+    name: delivery_network
+    # Cria uma rede de ponte definida pelo usuário chamada delivery_network.
+    # O tipo de rede de ponte é o padrão para comunicação entre containers Docker.
+    # Fornece resolução DNS entre containers usando nomes de serviço.

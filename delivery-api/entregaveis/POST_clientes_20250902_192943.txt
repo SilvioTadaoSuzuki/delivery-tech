@@ -1,0 +1,27 @@
+=== ENTREGA - TESTE DE ENDPOINT ===
+Data/Hora: 02/09/2025 19:29:43
+Método: POST
+URL Completa: http://localhost/api/clientes
+Status HTTP: 400
+Content-Type: application/json
+
+=== DADOS ENVIADOS ===
+{
+  "nome" : null,
+  "telefone" : null,
+  "email" : null,
+  "endereco" : null
+}
+
+=== RESPOSTA REAL ===
+{
+  "validationErrors" : {
+    "telefone" : "Telefone é obrigatório",
+    "endereco" : "Endereço é obrigatório",
+    "nome" : "Nome é obrigatório",
+    "email" : "Email é obrigatório"
+  },
+  "error" : "Dados inválidos",
+  "timestamp" : "2025-09-02T19:29:43.8569182",
+  "status" : 400
+}

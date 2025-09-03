@@ -1,0 +1,15 @@
+=== ENTREGA - TESTE DE ENDPOINT ===
+Data/Hora: 02/09/2025 23:11:56
+Método: GET
+URL Completa: http://localhost/api/clientes/999
+Status HTTP: 404
+Content-Type: application/json
+
+
+=== RESPOSTA REAL ===
+{
+  "success" : false,
+  "data" : null,
+  "message" : "Cliente não encontrado",
+  "timestamp" : "2025-09-02T23:11:56.9166887"
+}
