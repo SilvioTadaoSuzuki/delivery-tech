@@ -1,0 +1,490 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.deliverytech:delivery-api >--------------------
+[INFO] Building delivery-api 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.13:prepare-agent (default) @ delivery-api ---
+[INFO] argLine set to -javaagent:C:\\Users\\Tadao\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.13\\org.jacoco.agent-0.8.13-runtime.jar=destfile=C:\\Users\\Tadao\\Documents\\delivery-dev\\delivery-api\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ delivery-api ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ delivery-api ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 82 source files with javac [debug parameters release 21] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[WARNING] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/main/java/com/deliverytech/delivery_api/model/Pedido.java:[42,27] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/main/java/com/deliverytech/delivery_api/model/Restaurante.java:[36,21] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[INFO] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/main/java/com/deliverytech/delivery_api/service/impl/RestauranteServiceImpl.java: C:\Users\Tadao\Documents\delivery-dev\delivery-api\src\main\java\com\deliverytech\delivery_api\service\impl\RestauranteServiceImpl.java uses or overrides a deprecated API.
+[INFO] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/main/java/com/deliverytech/delivery_api/service/impl/RestauranteServiceImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ delivery-api ---
+[INFO] Copying 2 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ delivery-api ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 6 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[WARNING] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/test/java/com/deliverytech/delivery_api/controller/ClienteControllerTest.java:[45,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/test/java/com/deliverytech/delivery_api/controller/ClienteControllerTest.java:[45,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/test/java/com/deliverytech/delivery_api/controller/ClienteControllerTest.java:[45,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/test/java/com/deliverytech/delivery_api/controller/ClienteControllerTest.java:[45,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[WARNING] /C:/Users/Tadao/Documents/delivery-dev/delivery-api/src/test/java/com/deliverytech/delivery_api/controller/ClienteControllerTest.java:[45,6] org.springframework.boot.test.mock.mockito.MockBean in org.springframework.boot.test.mock.mockito has been deprecated and marked for removal
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ delivery-api ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.deliverytech.delivery_api.controller.ClienteControllerTest
+22:07:12.182 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.deliverytech.delivery_api.controller.ClienteControllerTest]: ClienteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:07:12.725 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.deliverytech.delivery_api.DeliveryApiApplication for test class com.deliverytech.delivery_api.controller.ClienteControllerTest
+22:07:13.203 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+2025-09-03T22:07:13.950-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteControllerTest   : Starting ClienteControllerTest using Java 21.0.8 with PID 19524 (started by Tadao in C:\Users\Tadao\Documents\delivery-dev\delivery-api)
+2025-09-03T22:07:13.953-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteControllerTest   : The following 1 profile is active: "test"
+2025-09-03T22:07:13.991-03:00 DEBUG 19524 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@57a667c8
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\Tadao\.m2\repository\net\bytebuddy\byte-buddy-agent\1.17.6\byte-buddy-agent-1.17.6.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2025-09-03T22:07:21.798-03:00  WARN 19524 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03T22:07:28.698-03:00 DEBUG 19524 --- [           main] i.m.c.u.i.logging.InternalLoggerFactory  : Using SLF4J as the default logging framework
+2025-09-03T22:07:29.016-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 52 mappings in 'requestMappingHandlerMapping'
+2025-09-03T22:07:29.275-03:00 DEBUG 19524 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-09-03T22:07:29.629-03:00  INFO 19524 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-03T22:07:30.267-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-03T22:07:30.447-03:00 DEBUG 19524 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-03T22:07:30.788-03:00 DEBUG 19524 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: webMvcObservationFilter urls=[/*] order=-2147483647, responseCaptureFilter urls=[/api/*] order=1, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105, jwtAuthenticationFilter urls=[/*] order=2147483647
+2025-09-03T22:07:30.788-03:00 DEBUG 19524 --- [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
+2025-09-03T22:07:30.847-03:00 DEBUG 19524 --- [           main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-09-03T22:07:30.996-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteControllerTest   : Started ClienteControllerTest in 17.852 seconds (process running for 21.3)
+=== INICIANDO CARGA DE DADOS DE TESTE ===
+--- Inserindo clientes ---
+? 5 clientes inseridos
+--- Inserindo Restaurantes ---
+? 5 restaurantes inseridos
+--- Inserindo Produtos ---
+? 10 produtos inseridos
+=== CARGA DE DADOS CONCLUÍDA ===
+
+? Spring Boot Application iniciada com sucesso!
+
+? SISTEMA DE CAPTURA AUTOMÁTICA ATIVO!
+? Respostas serão salvas em: ./entregaveis/
+? Faça requisições para /api/* e veja os arquivos sendo gerados!
+
+2025-09-03T22:07:31.764-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorId(Long)
+2025-09-03T22:07:31.802-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente ID: 1
+2025-09-03T22:07:31.910-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:31.912-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.deliverytech.delivery_api.dto.response.ApiResponseWrapper@254b7273]
+? Resposta completa salva: entregaveis/GET_clientes_1_20250903_220731.txt
+2025-09-03T22:07:32.108-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#ativarDesativarCliente(Long)
+2025-09-03T22:07:32.110-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para alterar status do cliente ID: 1
+2025-09-03T22:07:32.115-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:32.116-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{cliente=Cliente(id=1, nome=João Silva Santos, telefone=null, endereco=null, email=joao@email.com, a (truncated)...]
+? Resposta completa salva: entregaveis/PATCH_clientes_1_status_20250903_220732.txt
+2025-09-03T22:07:32.137-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorEmail(String)
+2025-09-03T22:07:32.146-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente por email: inexistente@email.com
+2025-09-03T22:07:32.148-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+? Resposta completa salva: entregaveis/GET_clientes_email_inexistente@email.com_20250903_220732.txt
+2025-09-03T22:07:32.172-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorEmail(String)
+2025-09-03T22:07:32.172-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente por email: joao@email.com
+2025-09-03T22:07:32.179-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:32.179-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@em (truncated)...]
+? Resposta completa salva: entregaveis/GET_clientes_email_joao@email.com_20250903_220732.txt
+2025-09-03T22:07:32.235-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#cadastrar(ClienteRequest)
+2025-09-03T22:07:32.291-03:00 DEBUG 19524 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=null, telefone=null, email=null, endereco=null)]
+2025-09-03T22:07:32.397-03:00 DEBUG 19524 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.deliverytech.delivery_api.exception.GlobalExceptionHandler#handleValidationExceptions(MethodArgumentNotValidException)
+2025-09-03T22:07:32.399-03:00  WARN 19524 --- [           main] c.d.d.exception.GlobalExceptionHandler   : Erro de validação: {telefone=Telefone é obrigatório, endereco=Endereço é obrigatório, nome=Nome é obrigatório, email=Email é obrigatório}
+2025-09-03T22:07:32.400-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:32.401-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{validationErrors={telefone=Telefone é obrigatório, endereco=Endereço é obrigatório, nome=Nome é obr (truncated)...]
+2025-09-03T22:07:32.404-03:00 DEBUG 19524 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.deliverytech.delivery_api.controller.ClienteController.cadastrar(com.deliverytech.delivery_api.dto.request.ClienteRequest) with 4 errors: [Field error in object 'clienteRequest' on field 'email': rejected value [null]; codes [NotBlank.clienteRequest.email,NotBlank.email,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.email,email]; arguments []; default message [email]]; default message [Email é obrigatório]] [Field error in object 'clienteRequest' on field 'nome': rejected value [null]; codes [NotBlank.clienteRequest.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.nome,nome]; arguments []; default message [nome]]; default message [Nome é obrigatório]] [Field error in object 'clienteRequest' on field 'telefone': rejected value [null]; codes [NotBlank.clienteRequest.telefone,NotBlank.telefone,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.telefone,telefone]; arguments []; default message [telefone]]; default message [Telefone é obrigatório]] [Field error in object 'clienteRequest' on field 'endereco': rejected value [null]; codes [NotBlank.clienteRequest.endereco,NotBlank.endereco,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [clienteRequest.endereco,endereco]; arguments []; default message [endereco]]; default message [Endereço é obrigatório]] ]
+? Resposta completa salva: entregaveis/POST_clientes_20250903_220732.txt
+2025-09-03T22:07:32.430-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorId(Long)
+2025-09-03T22:07:32.430-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar cliente ID: 999
+2025-09-03T22:07:32.432-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:32.432-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.deliverytech.delivery_api.dto.response.ApiResponseWrapper@58e50f1e]
+? Resposta completa salva: entregaveis/GET_clientes_999_20250903_220732.txt
+2025-09-03T22:07:32.455-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#buscarPorNome(String)
+2025-09-03T22:07:32.456-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para buscar clientes por nome: Silva
+2025-09-03T22:07:32.470-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:32.471-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@e (truncated)...]
+? Resposta completa salva: entregaveis/GET_clientes_buscar_20250903_220732.txt
+2025-09-03T22:07:32.496-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#listar()
+2025-09-03T22:07:32.497-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para listar clientes ativos
+2025-09-03T22:07:32.498-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:32.499-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@e (truncated)...]
+? Resposta completa salva: entregaveis/GET_clientes_20250903_220732.txt
+2025-09-03T22:07:32.524-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#atualizar(Long, ClienteRequest)
+2025-09-03T22:07:32.528-03:00 DEBUG 19524 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=João Silva Santos, telefone=11999999999, email=joao@email.com, endereco=Av João  (truncated)...]
+2025-09-03T22:07:32.550-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para atualizar cliente ID: 1
+2025-09-03T22:07:32.551-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:32.551-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Atualizado, telefone=null, endereco=null, email=joao@email.com, ativo= (truncated)...]
+? Resposta completa salva: entregaveis/PUT_clientes_1_20250903_220732.txt
+2025-09-03T22:07:32.577-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.deliverytech.delivery_api.controller.ClienteController#cadastrar(ClienteRequest)
+2025-09-03T22:07:32.578-03:00 DEBUG 19524 --- [           main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ClienteRequest(nome=João Silva Santos, telefone=11999999999, email=joao@email.com, endereco=Av João  (truncated)...]
+2025-09-03T22:07:32.579-03:00  INFO 19524 --- [           main] c.d.d.controller.ClienteController       : Recebida requisição para cadastrar cliente: joao@email.com
+2025-09-03T22:07:32.580-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-09-03T22:07:32.580-03:00 DEBUG 19524 --- [           main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Cliente(id=1, nome=João Silva Santos, telefone=11999999999, endereco=Av João da Silva, email=joao@em (truncated)...]
+? Resposta completa salva: entregaveis/POST_clientes_20250903_220732.txt
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.00 s -- in com.deliverytech.delivery_api.controller.ClienteControllerTest
+[INFO] Running com.deliverytech.delivery_api.DeliveryApiApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-09-03T22:07:32.726-03:00  INFO 19524 --- [           main] c.d.d.DeliveryApiApplicationTests        : Starting DeliveryApiApplicationTests using Java 21.0.8 with PID 19524 (started by Tadao in C:\Users\Tadao\Documents\delivery-dev\delivery-api)
+2025-09-03T22:07:32.727-03:00  INFO 19524 --- [           main] c.d.d.DeliveryApiApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2025-09-03T22:07:32.730-03:00 DEBUG 19524 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@65853a9d
+2025-09-03T22:07:33.983-03:00  INFO 19524 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03T22:07:34.065-03:00  INFO 19524 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 5 JPA repository interfaces.
+2025-09-03T22:07:34.329-03:00  INFO 19524 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03T22:07:34.336-03:00  INFO 19524 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-03T22:07:34.359-03:00  INFO 19524 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03T22:07:34.362-03:00  INFO 19524 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-09-03T22:07:34.365-03:00  INFO 19524 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn2: url=jdbc:h2:mem:delivery user=SA
+2025-09-03T22:07:34.365-03:00  INFO 19524 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-09-03T22:07:34.367-03:00  WARN 19524 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-03T22:07:34.374-03:00  INFO 19524 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-03T22:07:34.713-03:00  INFO 19524 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists cliente cascade 
+Hibernate: 
+    drop table if exists item_pedido cascade 
+Hibernate: 
+    drop table if exists pedido cascade 
+Hibernate: 
+    drop table if exists produto cascade 
+Hibernate: 
+    drop table if exists restaurante cascade 
+Hibernate: 
+    drop table if exists usuario cascade 
+Hibernate: 
+    create table cliente (
+        ativo boolean,
+        data_criacao timestamp(6),
+        id bigint generated by default as identity,
+        email varchar(255) unique,
+        endereco varchar(255),
+        nome varchar(255),
+        telefone varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table item_pedido (
+        preco_unitario numeric(10,2) not null,
+        quantidade integer not null,
+        subtotal numeric(10,2) not null,
+        id bigint generated by default as identity,
+        pedido_id bigint not null,
+        produto_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table pedido (
+        subtotal numeric(38,2),
+        valor_total numeric(38,2),
+        cliente_id bigint,
+        data_pedido timestamp(6),
+        id bigint generated by default as identity,
+        restaurante_id bigint,
+        bairro varchar(255),
+        cep varchar(255),
+        cidade varchar(255),
+        complemento varchar(255),
+        estado varchar(255),
+        logradouro varchar(255),
+        numero varchar(255),
+        numero_pedido varchar(255),
+        observacoes varchar(255),
+        status enum ('CANCELADO','CONFIRMADO','CRIADO','ENTREGUE','PENDENTE','PREPARANDO','SAIU_PARA_ENTREGA'),
+        primary key (id)
+    )
+Hibernate: 
+    create table produto (
+        disponivel boolean,
+        preco numeric(38,2),
+        id bigint generated by default as identity,
+        restaurante_id bigint,
+        categoria varchar(255),
+        descricao varchar(255),
+        nome varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table restaurante (
+        ativo boolean,
+        avaliacao numeric(38,2),
+        taxa_entrega numeric(38,2),
+        tempo_entrega_minutos integer,
+        id bigint generated by default as identity,
+        categoria varchar(255),
+        nome varchar(255),
+        telefone varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table usuario (
+        ativo boolean,
+        data_criacao timestamp(6),
+        id bigint generated by default as identity,
+        restaurante_id bigint,
+        email varchar(255) not null unique,
+        nome varchar(255),
+        senha varchar(255) not null,
+        role enum ('ADMIN','CLIENTE','ENTREGADOR','RESTAURANTE','USER') not null,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists item_pedido 
+       add constraint FK60ym08cfoysa17wrn1swyiuda 
+       foreign key (pedido_id) 
+       references pedido
+Hibernate: 
+    alter table if exists item_pedido 
+       add constraint FKtk55mn6d6bvl5h0no5uagi3sf 
+       foreign key (produto_id) 
+       references produto
+Hibernate: 
+    alter table if exists pedido 
+       add constraint FK30s8j2ktpay6of18lbyqn3632 
+       foreign key (cliente_id) 
+       references cliente
+Hibernate: 
+    alter table if exists pedido 
+       add constraint FK3eud5cqmgsnltyk704hu3qj71 
+       foreign key (restaurante_id) 
+       references restaurante
+Hibernate: 
+    alter table if exists produto 
+       add constraint FKb9jhjyghjcn25guim7q4pt8qx 
+       foreign key (restaurante_id) 
+       references restaurante
+2025-09-03T22:07:34.830-03:00  INFO 19524 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03T22:07:35.076-03:00  INFO 19524 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name authServiceImpl
+2025-09-03T22:07:35.459-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 56 mappings in 'requestMappingHandlerMapping'
+2025-09-03T22:07:35.501-03:00 DEBUG 19524 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-09-03T22:07:35.578-03:00  INFO 19524 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoints beneath base path '/actuator'
+2025-09-03T22:07:35.613-03:00 DEBUG 19524 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-03T22:07:35.684-03:00 DEBUG 19524 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-03T22:07:35.695-03:00 DEBUG 19524 --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-03T22:07:35.958-03:00  INFO 19524 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:delivery'
+2025-09-03T22:07:36.030-03:00  INFO 19524 --- [           main] c.d.d.DeliveryApiApplicationTests        : Started DeliveryApiApplicationTests in 3.395 seconds (process running for 26.334)
+=== INICIANDO CARGA DE DADOS DE TESTE ===
+--- Inserindo clientes ---
+Hibernate: 
+    insert 
+    into
+        cliente
+        (ativo, data_criacao, email, endereco, nome, telefone, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        cliente
+        (ativo, data_criacao, email, endereco, nome, telefone, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        cliente
+        (ativo, data_criacao, email, endereco, nome, telefone, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        cliente
+        (ativo, data_criacao, email, endereco, nome, telefone, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        cliente
+        (ativo, data_criacao, email, endereco, nome, telefone, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+? 5 clientes inseridos
+--- Inserindo Restaurantes ---
+Hibernate: 
+    insert 
+    into
+        restaurante
+        (ativo, avaliacao, categoria, nome, taxa_entrega, telefone, tempo_entrega_minutos, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        restaurante
+        (ativo, avaliacao, categoria, nome, taxa_entrega, telefone, tempo_entrega_minutos, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        restaurante
+        (ativo, avaliacao, categoria, nome, taxa_entrega, telefone, tempo_entrega_minutos, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        restaurante
+        (ativo, avaliacao, categoria, nome, taxa_entrega, telefone, tempo_entrega_minutos, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        restaurante
+        (ativo, avaliacao, categoria, nome, taxa_entrega, telefone, tempo_entrega_minutos, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+? 5 restaurantes inseridos
+--- Inserindo Produtos ---
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.ativo,
+        r1_0.avaliacao,
+        r1_0.categoria,
+        r1_0.nome,
+        r1_0.taxa_entrega,
+        r1_0.telefone,
+        r1_0.tempo_entrega_minutos 
+    from
+        restaurante r1_0
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        produto
+        (categoria, descricao, disponivel, nome, preco, restaurante_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, default)
+? 10 produtos inseridos
+=== CARGA DE DADOS CONCLUÍDA ===
+
+? Spring Boot Application iniciada com sucesso!
+
+? SISTEMA DE CAPTURA AUTOMÁTICA ATIVO!
+? Respostas serão salvas em: ./entregaveis/
+? Faça requisições para /api/* e veja os arquivos sendo gerados!
+
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.559 s -- in com.deliverytech.delivery_api.DeliveryApiApplicationTests
+[INFO] Running com.deliverytech.delivery_api.services.ClienteServiceTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 s -- in com.deliverytech.delivery_api.services.ClienteServiceTest
+[INFO] Running com.deliverytech.delivery_api.services.PedidoServiceTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.185 s -- in com.deliverytech.delivery_api.services.PedidoServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jacoco:0.8.13:report (report) @ delivery-api ---
+[INFO] Loading execution data file C:\Users\Tadao\Documents\delivery-dev\delivery-api\target\jacoco.exec
+[INFO] Analyzed bundle 'delivery-api' with 71 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  41.262 s
+[INFO] Finished at: 2025-09-03T22:07:38-03:00
+[INFO] ------------------------------------------------------------------------

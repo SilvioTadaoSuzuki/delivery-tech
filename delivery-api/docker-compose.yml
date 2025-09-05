@@ -17,7 +17,7 @@ services:
     # Executa o container como usuário root para permissões completas de acesso.
 
     ports:
-      - "8080:8080"    # Host:Container
+      - "8081:8080"    # Host:Container
     # Mapeia a porta 8080 do host para a porta 8080 no container.
     # Permite acessar a aplicação Spring Boot via http://localhost:8080.
 
